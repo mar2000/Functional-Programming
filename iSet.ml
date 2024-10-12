@@ -26,7 +26,7 @@ let make l (a, b) r =   (* łączy wyważone drzewa wraz z przedziałem o różn
           sum = check (check (b-a) + 1 + sum l + sum r)}
 
 let bal l k r =                                 (* łączy wyważone drzewa wraz z przedziałem *)
-    let hl = height l in                        (* o różnicy wysokości <= 3                 *)
+    let hl = height l in                                        (* o różnicy wysokości <= 3 *)
     let hr = height r in 
     if hl > hr + 2 then 
         match l with
@@ -64,7 +64,7 @@ let cmp (a, b) c =                             (* patrzy na położenie c w prze
     else 0
     
 let rec add_one (a, b) set =                               (* dodaje przedział, który jest  *)
-    if b < a then set                                      (* rozłączny z pozostałymi       *)
+    if b < a then set                                            (* rozłączny z pozostałymi *)
     else match set with
         | Node {left = l; interval = k; right = r} ->
             let pom =                                             (* porównyjemy przedziały *)
@@ -126,7 +126,7 @@ let add (a, b) set =                         (* dodaje do drzewa liczby z przedz
 
 let remove (a, b) set =                        (* usuwa liczby z przedziału (a, b) z drzewa *)
     let (l, _, r) = split a set in                      (* drzewo elementów mniejszych od a *)
-    let (_, _, r) = split b r in                        (* drzewo elementów większych od b  *)
+    let (_, _, r) = split b r in                         (* drzewo elementów większych od b *)
     if r = Empty then l                                            
     else let pom = min_elt r in join l pom (remove_min_elt r)      (* łączymy te dwa drzewa *)
     
