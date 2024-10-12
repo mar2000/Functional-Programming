@@ -1,4 +1,4 @@
-(* Zadanie: Modyfikacja drzew     Autor: Maria Nazarczuk                                     *)
+(* Zadanie: Modyfikacja drzew     Autor: Marysia Nazarczuk                                   *)
                                                                                             
 type t =                  (* Node trzyma nam: lewy syn, przedział, prawy syn, wysokość, suma *)
     | Node of {left : t; interval : int * int; right : t; height : int; sum : int }
