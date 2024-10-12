@@ -1,4 +1,4 @@
-(* Zadanie: Sortowanie topologiczne   Autor: Maria Nazarczuk                                *)
+(* Zadanie: Sortowanie topologiczne   Autor: Marysia Nazarczuk                              *)
 
 open PMap
 
