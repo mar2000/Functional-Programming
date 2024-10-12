@@ -1,4 +1,4 @@
-(* Zadanie: Drzewa Lewicowe	    Autor: Marysia Nazarczuk                                    *)
+(* Zadanie: Drzewa Lewicowe        Autor: Marysia Nazarczuk                                 *)
 
 type 'a queue =                                           (* Typ a' queue trzyma nam:       *)
     Tree of 'a * ('a queue) * ('a queue) * int |          (* - wartość, synów oraz wysokość *)
