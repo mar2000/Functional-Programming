@@ -1,4 +1,4 @@
-(* Zadanie: Origami              Autor: Maria Nazarczuk                                     *)
+(* Zadanie: Origami              Autor: Marysia Nazarczuk                                   *)
 
 type point = float * float                                         (* Punkt na płaszczyźnie *)
 
