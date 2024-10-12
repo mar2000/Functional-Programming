@@ -1,4 +1,4 @@
-(* Zadanie: Przelewanka      Autor: Maria Nazarczuk                                         *)
+(* Zadanie: Przelewanka      Autor: Marysia Nazarczuk                                       *)
 
 let przelewanka table =
     let rec nwd x y =
