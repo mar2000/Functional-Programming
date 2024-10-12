@@ -4,7 +4,7 @@ open PMap
 
 type top = Before | During | After                         (* stan odwiedzenia wierzchołków *)
 
-exception Cykliczne	                                                             (* wyjątek *)
+exception Cykliczne                                                              (* wyjątek *)
 
 let topol lista =
     let make_a_graph lista =                                             (* tworzenie grafu *)
