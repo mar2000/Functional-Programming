@@ -9,7 +9,7 @@ let epsilon = 1e-8                                                         (* ni
 let prostokat (a, b) (c, d) =                   (* sprawdzamy, czy punkt (x, y) znajduje    *)
     function (x, y) ->                          (* w prostokącie o lewym dolnym wierzchołku *)
         if x +. epsilon >= a &&                 (* w (a, b) i prawym górnym w (c, d), czyli *)
-           x -. epsilon <= c && 				(* czy spełnione są odpowiednie nierówności *)
+           x -. epsilon <= c &&                 (* czy spełnione są odpowiednie nierówności *)
            y +. epsilon >= b && 
            y -. epsilon <= d 
         then 1
